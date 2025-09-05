@@ -1,0 +1,65 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.urbanist-class {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(115, 130, 245);
+    border-radius: 2vh;
+    height: 8vh;
+}
+nav figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li{
+    list-style: none;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: 500;
+}
+header nav div button{
+    height: 4vh;
+    width: 12vh;
+    
+}
+#loginbutton{
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: white;
+    text-align: center;
+    padding: 8px;
+    
+}
+#signupbutton{
+    background-color: rgb(1, 1, 103);
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+    padding: 8px;
+}
