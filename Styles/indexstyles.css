@@ -1,65 +1,54 @@
 *{
-    padding: 0%;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 body{
-    background-color: black;
-}
-.urbanist-class {
-  font-family: "Urbanist", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
+    background-color: rgb(255, 255, 255);
 }
 
-
-header nav{
+nav{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: rgb(115, 130, 245);
-    border-radius: 2vh;
+    align-items: center;
     height: 8vh;
+    margin-top: 3vh;
+    background-color: rgb(53, 62, 223);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-nav figure {
+nav span{
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+nav ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-header nav ul{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-header nav ul li{
     list-style: none;
-    margin-left: 2vh;
-    margin-right: 2vh;
 }
-header nav ul li a{
+
+nav ul li{
+    margin-left: 3vh;
+}
+nav ul li a{
     text-decoration: none;
     color: white;
     font-size: large;
-    font-weight: 500;
 }
-header nav div button{
-    height: 4vh;
-    width: 12vh;
-    
+nav button{
+    padding: 1.2vh;
+    margin-left: 1vh;
+    margin-right: 1vh;
+    font-size: 2vh;
+    border-radius: 1vh;
 }
-#loginbutton{
-    border: 2px solid black;
-    border-radius: 4px;
-    background-color: white;
-    text-align: center;
-    padding: 8px;
-    
-}
-#signupbutton{
-    background-color: rgb(1, 1, 103);
-    border: 1px solid white;
-    border-radius: 4px;
+#login_btn{
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
     color: white;
-    padding: 8px;
+}
+#signup_btn{
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(255, 255, 255);
 }
