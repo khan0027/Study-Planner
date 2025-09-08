@@ -63,12 +63,20 @@ nav button{
     font-size: medium;
     
 }
+#login_btn:hover{
+    color: blue;
+    transition-duration: 300ms;
+}
 #signup_btn{
     background-color: rgb(53, 62, 223);
     color: white;
     border: 2px solid rgb(255, 255, 255);
     border-radius: 1vh;
     font-size: medium;
+}
+#signup_btn:hover{
+    background-color: rgb(0, 0, 0);
+    transition-duration: 300ms;
 }
 main{
     display: flex;
@@ -96,49 +104,27 @@ main div p{
     margin-top: 6vh;
 }
 @keyframes inout {
-    0%{
-        color: transparent;
-    }
-    25%{
-        color: blue;
-    }
-    50%{
-        color: transparent;
-    }
-    75%{
-        color: blue;
-        }
-    100%{
-        color: transparent;
-    }
+    0% { opacity: 0; visibility: hidden; }
+    25% { opacity: 1; visibility: visible; }
+    50% { opacity: 0; visibility: hidden; }
+    100% { opacity: 0; visibility: hidden; }
 }
-@keyframes outin{
-    0%{
-        
-        color: blue;
-    }
-    25%{
-        color: transparent;
-    }
-    50%{
-        color: blue;
-    }
-    75%{
-        color: transparent;
-    }
-    100%{
-        color: blue;
-    }
+
+@keyframes outin {
+    0% { opacity: 1; visibility: visible; }
+    25% { opacity: 0; visibility: hidden; }
+    50% { opacity: 1; visibility: visible; }
+    75% { opacity: 0; visibility: hidden; }
+    100% { opacity: 1; visibility: visible; }
 }
 #t1{
     color: blue;
-    z-index: 1;
+    z-index: 0;
     position: absolute;
     animation-name: inout;
     animation-duration: 8s;
     animation-iteration-count: infinite;
     left: 43%;
-    animation-timing-function: linear;
 }
 #t2{
     position: absolute;
