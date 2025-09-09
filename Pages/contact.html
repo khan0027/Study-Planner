@@ -3,31 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../Styles/login.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../Styles/signup.css">
 </head>
 <body>
     <nav>
         <span>PLAN STUDY</span>
         <ul>
             <li><a href="/index.html">Home</a></li>
-            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="/Pages/dashboard.html">Dashboard</a></li>
             <li><a href="#planstudy">Plan Study</a></li>
-            <li id="no_border" ><a href="#contact">Contact Us</a></li>
+            <li id="no_border" ><a href="/Pages/contact.html">Contact Us</a></li>
         </ul>
-        <a href="../Pages/Signup.html">
+        <div>
+            <a href="../Pages/login.html"><button id="login_btn" >Login</button></a>
+            <a href="../Pages/signup.html"><button id="signup_btn" >Signup</button></a>
             
-            <button>
-                Signup
-            </button>
-        </a>
+        </div>
     </nav>
     <main>
         <div>
 
         </div>
         <form action="">
-            <h1>Login</h1>
+            <h1>Contact Us</h1>
+            <label for="name">
+                Name
+                <br>
+                <input type="text" id="name" placeholder="Enter Username" />
+            </label>
+            <br>
             <label for="username">
                 Username
                 <br>
@@ -40,8 +45,13 @@
                 <input type="password" placeholder="Enter Password" />
             </label>
             <br>
+            <label for="password">
+                Confirm Password
+                <br>
+                <input type="password" placeholder="Confirm Password" />
+            </label>
             <button type="submit">
-                Submit
+                Register
             </button>
         </form>
     </main>

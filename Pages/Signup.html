@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="../Styles/login.css">
+    <title>Signup</title>
+    <link rel="stylesheet" href="../Styles/signup.css">
 </head>
 <body>
     <nav>
@@ -15,10 +15,10 @@
             <li><a href="#planstudy">Plan Study</a></li>
             <li id="no_border" ><a href="#contact">Contact Us</a></li>
         </ul>
-        <a href="../Pages/Signup.html">
-            
+        <a href="../Pages/login.html">
+
             <button>
-                Signup
+                Login
             </button>
         </a>
     </nav>
@@ -27,7 +27,13 @@
 
         </div>
         <form action="">
-            <h1>Login</h1>
+            <h1>Signup</h1>
+            <label for="name">
+                Name
+                <br>
+                <input type="text" id="name" placeholder="Enter Username" />
+            </label>
+            <br>
             <label for="username">
                 Username
                 <br>
@@ -40,8 +46,13 @@
                 <input type="password" placeholder="Enter Password" />
             </label>
             <br>
+            <label for="password">
+                Confirm Password
+                <br>
+                <input type="password" placeholder="Confirm Password" />
+            </label>
             <button type="submit">
-                Submit
+                Register
             </button>
         </form>
     </main>

@@ -1,0 +1,154 @@
+body{
+    background-color: black;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 8.9vh;
+    margin-top: 3vh;
+    background-color: rgb(53, 62, 223);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav span{
+    color: white;
+    font-weight: 600;
+    font-size: large;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 70vh;
+}
+
+nav ul li{
+    margin-left: 3vh;
+    padding-right: 25px;
+    border-right: 1px solid white;
+}
+#no_border{
+    border: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    
+}
+nav ul li a:hover{
+    color: black;
+    transition: all;
+    transition-duration: 300ms;
+}
+nav button{
+    color: white;
+    background-color: rgb(53, 62, 223);
+    width: 15vh;
+    height: 5vh;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: medium;
+}
+nav button:hover{
+    background-color: black;
+    transition-duration: 400ms;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    position: relative;
+    margin-top: 10vh;
+}
+
+@keyframes border_round {
+    0% {
+        background-image: conic-gradient(from 0deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    10% {
+        background-image: conic-gradient(from 36deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    20% {
+        background-image: conic-gradient(from 72deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    30% {
+        background-image: conic-gradient(from 108deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    40% {
+        background-image: conic-gradient(from 144deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    50% {
+        background-image: conic-gradient(from 180deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    60% {
+        background-image: conic-gradient(from 216deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    70% {
+        background-image: conic-gradient(from 252deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    80% {
+        background-image: conic-gradient(from 288deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    90% {
+        background-image: conic-gradient(from 324deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+    100% {
+        background-image: conic-gradient(from 360deg, red, yellow, lime, cyan, blue, magenta, red);
+    }
+}
+
+main div{
+    position: absolute;
+    height: 81vh;
+    width: 51vh;
+    border-radius: 10px;
+    filter: blur(5px);
+    animation: border_round;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: all;
+    transition-duration: 300ms;
+    background-image: conic-gradient(red,yellow,green,blue,orange,indigo);
+    z-index: 0;
+}
+main form{
+    border: 1px solid black;
+    height: 80vh;
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 10;
+}
+form{
+    backdrop-filter: blur(2px);
+    background-color: black;
+}
+form h1{
+    color: white;
+    margin-bottom: 10vh;
+}
+form label{
+    color: white;
+    margin-bottom: 1vh;
+}
+form button{
+    padding: 1.4vh;
+    border-radius: 2vh;
+    width: 17vh;
+    margin-bottom: 5vh;
+    margin-top: 3vh;
+    font-size: medium;
+}
+input{
+    height: 30px;
+    width: 30vh;
+    border: none;
+    border-radius: 10px;
+    padding-left: 18px;
+    margin-top: 8px;
+}
