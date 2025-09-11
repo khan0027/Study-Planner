@@ -26,6 +26,7 @@ nav span{
     color: white;
     font-weight: 600;
     font-size: large;
+    cursor: grab;
 }
 nav ul{
     display: flex;
@@ -51,6 +52,8 @@ nav ul li a{
 nav ul li a:hover{
     color: rgb(53, 62, 223);
     transition-duration: 400ms;
+    font-size: large;
+    font-weight: 500;
 }
 nav div{
     background-color: transparent;
@@ -66,7 +69,7 @@ nav div{
 nav button{
     padding: 1.2vh;
     font-size: 2vh;
-    
+    cursor: pointer;
 
 }
 #login_btn{
