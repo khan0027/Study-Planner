@@ -12,9 +12,14 @@ nav{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 8.9vh;
-    margin-top: 3vh;
-    background-color: rgb(53, 62, 223);
+    height: 12vh;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    position: sticky;
+    top: 0;
+    flex-wrap: wrap;
+    z-index: 30;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 nav span{
@@ -26,6 +31,7 @@ nav ul{
     display: flex;
     list-style: none;
     width: 70vh;
+    flex-wrap: wrap;
 }
 
 nav ul li{
@@ -43,7 +49,7 @@ nav ul li a{
     
 }
 nav ul li a:hover{
-    color: black;
+    color: rgb(53, 62, 223);
     transition-duration: 400ms;
 }
 nav div{
@@ -95,6 +101,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     height: 80vh;
+    z-index: 1;
 }
 main div{
     position: relative;

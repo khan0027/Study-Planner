@@ -10,6 +10,9 @@ nav{
     margin-top: 3vh;
     background-color: rgb(53, 62, 223);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: sticky;
+    top: 5vh;
+    z-index: 34;
 }
 nav span{
     color: white;
@@ -61,6 +64,7 @@ main{
     height: 80vh;
     position: relative;
     margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 @keyframes border_round {
